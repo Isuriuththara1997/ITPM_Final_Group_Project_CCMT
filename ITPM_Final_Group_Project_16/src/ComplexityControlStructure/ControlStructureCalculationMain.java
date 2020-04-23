@@ -23,15 +23,15 @@ public static void main(String[] args) throws IOException {
 		
 		ControlStructureCalculation complexity = new ControlStructureCalculation(row);
 		
-		ArrayList<Integer> Count = complexity.ctcsrow();
+		ArrayList<Integer> Count = complexity.cntrolrow();
 		
 
 		
 		for(i = 0; i < row.size(); i++) {
-			System.out.println("Row Number " + (i+1) + " Count is = " +Count.get(i));
+			System.out.println("Row Number " + (i+1) + " Weight due to control structure type(WTC) *  Number of conditions in the control structure(NC) is = " +Count.get(i));
 		}
 		
-		System.out.println("Total Complexity of the control structur = " +complexity.totalcomplexityCalculate());
+	
 		
 	}
 

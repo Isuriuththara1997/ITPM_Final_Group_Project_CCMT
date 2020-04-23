@@ -1,51 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Code Complexity Tool</title>
 </head>
-<style type="text/css">
-#section {
-	width: 1000px;
-	height: 470px;
-	float: left;
-	padding: 10px;
-}
-
-.button {
-	background-color: blue;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-.button1 {
-	background-color: blue;
-	border: none;
-	color: white;
-	padding: 12px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-
-#footer {
-	background-color: #000099;
-	color: white;
-	text-align: center;
-	padding: 6px;
-	clear: both;
-}
+<style>
 body {
   font-family: "Lato", sans-serif;
 }
@@ -117,18 +78,41 @@ body {
 h1 {
 	text-align: center;
 }
+#footer {
+	background-color: #000099;
+	color: white;
+	text-align: center;
+	padding: 6px;
+	clear: both;
+}
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 </style>
+<body>
+</br>
 
-<body style="background-image:url('home.jpg')">
-<div class="sidenav">
+	<div class="sidenav">
   <a href="#about">AboutUs</a>
   </br>
   <a href="#services">ContactUs</a>
   </br>
+ 
+  <a href="Home.jsp">Home</a>
+  </br>
   <a href="#clients">Log In</a>
   </br>
-  <a href="Home.jsp">Home</a>
+  <a href="Upload.jsp">Upload File</a>
   </br>
   <button class="dropdown-btn">Services 
     <i class="fa fa-caret-down"></i>
@@ -143,7 +127,8 @@ h1 {
   </div>
   </br>
   <a href="#contact">Search</a>
-  <a href="www.facebook.com">Facebook</a>
+  </br>
+ <a href="https://www.facebook.com/">Facebook</a>
    </br>
  <a href="www.facebook.com">YouTube</a>
    </br>
@@ -154,12 +139,22 @@ h1 {
 </div>
 
 <div class="main">
-  <h1 style="color: white;">
-		<b><i>Code Complexity Measuring Tool</i></b>
+  <h1 style="color: black;">
+		<b><i>Inheritance</i></b>
 	</h1>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href= ""><button class="button">Show Result</button></a>
 
 </div>
-
+ </br><br></br></br> </br><br></br></br> </br><br></br></br> </br><br></br></br> </br><br></br></br>
+  </br><br></br></br> </br><br></br></br> </br><br></br></br></br></br> 
+  
+<div id="footer">Code by ITPM Group 16</div>
 
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -178,32 +173,5 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
-	</br>
-	<h2 style="color: yellow;">
-		<b><i>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please Upload your Source Code to Measure the Complexity</i></b>
-	</h2>
-	</br>
-	
-	<div id="section">
-	
-		<form action="/action_page.php">
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="file" id="myFile" name="filename" class="button1"> 
-			<input type="submit" class="button" formaction="Home.jsp">
-			
-		</form>
-	</div>
-
-	<div id="footer">Code by ITPM Group 16</div>
-	
-	
-
 </body>
 </html>

@@ -75,7 +75,8 @@ public class ControlStructureCalculation {
 	}
 
 	public void calculateLineByLine() {
-		for (int i = 0; i < row.size(); i++) {
+		int i;
+		for (i = 0; i < row.size(); i++) {
 			int conditionalccount = conditionalCcount(row.get(i));
 			int iterativeccount = iterativeCcount(row.get(i));
 			int switchccount = switchCcount(row.get(i));
@@ -86,19 +87,9 @@ public class ControlStructureCalculation {
 	}
 
 
-	public ArrayList<Integer> ctcsrow() {
+	public ArrayList<Integer> cntrolrow() {
 		calculateLineByLine();
 		return Count;
 	}
-
-	public int totalcomplexityCalculate() {
-		int totalcomplexity = 0;
-		int i;
-		for (i = 0; i < Count.size(); i++) {
-			totalcomplexity = totalcomplexity + Count.get(i);
-		}
-
-		return totalcomplexity;
-	}
-
+	
 }
