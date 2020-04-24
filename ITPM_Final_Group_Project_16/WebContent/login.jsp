@@ -7,8 +7,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
 </head>
 <body>
 	<% 
@@ -19,34 +19,28 @@
 			Connection con = null;
 			
             String username = request.getParameter("username");
-            String email  = request.getParameter("email");
+            
             String password = request.getParameter("password");
             
             
-            con = connectDB();
             
             try {
             	
             	
                 
-                String insert = "INSERT INTO users (user_Name, user_Email, user_Password) VALUES (?,?,?)";
-
-                pst = con.prepareStatement(insert);
-
-                pst.setString(1, username);
-                pst.setString(2, email);
-                pst.setString(3, password);
-
-                pst.execute();
-
+                if(username.equals("Admin") && password.equals("Admin@123")){
+                	 response.sendRedirect("Home.jsp");
+                }
+                else{
+                	response.sendRedirect("login.html");
+                }
                
 
             } catch (Exception e) {
 
             }
            	
-            response.sendRedirect("login.html");
+           
         %>
-
 </body>
 </html>
